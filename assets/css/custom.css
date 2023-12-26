@@ -2,10 +2,6 @@
     height: 100%;
     width: auto;
 }
-.navbar-brand img{
-    height: 100%;
-    width: 100%;
-}
 li.nav-item a.nav-link:hover,
 li.nav-item a.nav-link:focus,
 li.nav-item a.nav-link.active {
@@ -36,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 @media (max-width: 767.5px) {
+    .navbar-brand img{
+        height: 70px;
+        width: 151px;
+    }
     #headerinfo{
         display: none;
     }
@@ -50,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (min-width: 767.5px) and (max-width: 1199.5px) {
+    .navbar-brand img{
+        height: 115px;
+        width: 248.5px;
+    }
     #cenas,#kontakti{
         /* padding-top: 200px; 
         margin-top: -200px; */
@@ -63,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (min-width: 1199.5px){
+    .navbar-brand img{
+        height: 210px;
+        width: 454px;
+    }
     .navbar-nav{
         margin-top: 70px;
     }
