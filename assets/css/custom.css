@@ -1,6 +1,10 @@
-.navbar-brand img{
-    width: 100%;
+.navbar-brand{
     height: 100%;
+    width: auto;
+}
+.navbar-brand img{
+    height: 100%;
+    width: 100%;
 }
 li.nav-item a.nav-link:hover,
 li.nav-item a.nav-link:focus,
@@ -31,76 +35,47 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: 1px;
 }
-@media (min-width: 100px) and (max-width: 450px) {
+@media (max-width: 767.5px) {
     #headerinfo{
         display: none;
     }
-    #pakalpojumi,#cenas,#kontakti{
-        /* padding-top: 150px; 
-        margin-top: -150px; */
+    #cenas,#kontakti{
         scroll-margin-top: 150px;
     }
-    #parmums{
+    #pakalpojumi{
         padding-top: 150px; 
     }
-}
-@media (min-width: 450px) and (max-width: 600px) {
-    #headerinfo{
-        display: none;
+    .container-fluid{
+        height: 80px;
     }
-    #pakalpojumi,#cenas,#kontakti{
+}
+@media (min-width: 767.5px) and (max-width: 1199.5px) {
+    #cenas,#kontakti{
         /* padding-top: 200px; 
         margin-top: -200px; */
-        scroll-margin-top: 200px;
-    }
-    #parmums{
-        padding-top: 200px; 
-    }
-}
-@media (min-width: 600px) and (max-width: 767.5px) {
-    #headerinfo{
-        display: none;
-    }
-    #pakalpojumi,#cenas,#kontakti{
-        /* padding-top: 250px; 
-        margin-top: -250px; */
-        scroll-margin-top: 250px;
-    }
-    #parmums{
-        padding-top: 250px; 
-    }
-}
-@media (min-width: 767.5px) and (max-width: 888px) {
-    #pakalpojumi,#cenas,#kontakti{
-        /* padding-top: 150px; 
-        margin-top: -150px; */
         scroll-margin-top: 150px;
     }
-    #parmums{
-        padding-top: 150px;
+    #pakalpojumi{
+        padding-top: 150px; 
     }
-}
-@media (min-width: 888px) and (max-width: 1199.5px) {
-    #pakalpojumi,#cenas,#kontakti{
-        /* padding-top: 200px; 
-        margin-top: -200px; */
-        scroll-margin-top: 200px;
-    }
-    #parmums{
-        padding-top: 200px;
+    .container-fluid{
+        height: 125px;
     }
 }
 @media (min-width: 1199.5px){
     .navbar-nav{
         margin-top: 70px;
     }
-    #pakalpojumi,#cenas,#kontakti{
+    .container-fluid{
+        height: 220px;
+    }
+    #cenas,#kontakti{
         /* padding-top: 250px; 
         margin-top: -250px; */
         scroll-margin-top: 250px;
     }
-    #parmums{
-        padding-top: 250px;
+    #pakalpojumi{
+        padding-top: 250px; 
     }
 }
 .bckgrnd-color{
