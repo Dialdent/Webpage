@@ -2,6 +2,10 @@
     height: 100%;
     width: auto;
 }
+#pakalpojumi a{
+    text-decoration: none;
+    color: black;
+}
 li.nav-item a.nav-link:hover,
 li.nav-item a.nav-link:focus,
 li.nav-item a.nav-link.active {
@@ -39,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     #headerinfo{
         display: none;
     }
-    #cenas,#kontakti{
+    .scrollMargin{
         scroll-margin-top: 150px;
     }
     #pakalpojumi{
@@ -54,16 +58,24 @@ h1, h2, h3, h4, h5, h6 {
         height: 115px;
         width: 248.5px;
     }
-    #cenas,#kontakti{
-        /* padding-top: 200px; 
-        margin-top: -200px; */
+    .container-fluid{
+        height: 125px;
+    }
+    .navbar-nav {
+        display:table;
+        width:100%;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float:none;
+        display:table-cell;
+        text-align:center;
+    }
+    .scrollMargin{
         scroll-margin-top: 150px;
     }
     #pakalpojumi{
         padding-top: 150px; 
-    }
-    .container-fluid{
-        height: 125px;
     }
 }
 @media (min-width: 1199.5px){
@@ -77,13 +89,24 @@ h1, h2, h3, h4, h5, h6 {
     .container-fluid{
         height: 220px;
     }
-    #cenas,#kontakti{
-        /* padding-top: 250px; 
-        margin-top: -250px; */
+    .navbar-nav {
+        display:table;
+        width:100%;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float:none;
+        display:table-cell;
+        text-align:center;
+    }
+    .scrollMargin{
         scroll-margin-top: 250px;
     }
     #pakalpojumi{
         padding-top: 250px; 
+    }
+    .marginto-5{
+        margin-top: 3rem !important;
     }
 }
 .bckgrnd-color{
