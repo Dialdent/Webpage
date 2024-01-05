@@ -1,0 +1,17 @@
+#example.com/page will display the contents of example.com/page.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+#If you want to redirect http://www.example.com to http://example.com
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.dialdent\.lv$ [NC]
+RewriteRule ^(.*)$ http://dialdent.lv/$1 [R=301,L]
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+RewriteRule .* – [F,L]
+
+#301 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
