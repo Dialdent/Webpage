@@ -1,1 +1,1 @@
-function clickButton(t){document.getElementById(t).click()}function navPage(t){window.location.href="#"+t,history.pushState({},"","/")}
+function clickButton(t){document.getElementById(t).click();navPage(t)}function navPage(t){window.location.href="#"+t,history.pushState({},"","/")}
