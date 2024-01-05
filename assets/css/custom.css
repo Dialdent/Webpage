@@ -2,7 +2,7 @@
     height: 100%;
     width: auto;
 }
-#pakalpojumi a{
+#pakalpojumi a, .callBtn{
     text-decoration: none;
     color: black;
 }
