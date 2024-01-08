@@ -35,14 +35,14 @@
           "opens": "09:00",
           "closes": "17:00"
         },
-        "url": "https://dialdent.lv/"
+        "url": "https://dialdent.lv"
       }
     ]
     </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dialdent Zobārstniecība Cēsīs|Raušana|Labošana|Protezēšana</title>
+    <title>Dialdent Zobārstniecība Cēsīs-Raušana, Labošana, Protezēšana</title>
     <meta content="Zobārstniecības klīnika Dialdent Cēsīs veic mutes higiēnu, zobu labošanu, gudrības zobu raušana, ekstrakciju, protezēšanu, kanālu ārstēšanu, kapju izgatavošanu" name="description">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="assets/css/custom-min.css" media="screen" charset="utf-8">
@@ -51,10 +51,10 @@
     <link rel="canonical" href="https://www.dialdent.lv/" />
     <link rel="canonical" href="http://www.dialdent.lv" />
     <link rel="canonical" href="http://www.dialdent.lv/" />
-    <link rel="canonical" href="http://dialdent.lv" />
+    <!-- <link rel="canonical" href="http://dialdent.lv" /> -->
     <link rel="canonical" href="http://dialdent.lv/" />
     <link rel="canonical" href="https://dialdent.lv" />
-    <link rel="canonical" href="https//dialdent.lv/" />
+    <link rel="canonical" href="https://dialdent.lv/" />
 
     <nav id="navbar-spy" class="navbar navbar-expand-md bg-body-tertiary fixed-top rounded mb-4">
       <div class="container-fluid bckgrnd-color">
@@ -82,19 +82,21 @@
                     </svg><a class="callBtn" href="tel:+371 20000000"> +371 20000000</a>
                 </div>
                 <div class="col-xl-3 col-md-6">
+                  <div onclick="navPage('kontakti')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
                         <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-                    </svg><a onclick="navPage('kontakti')">Raunas 3A, Cēsis</a>
+                    </svg>Raunas 3A, Cēsis
+                  </div>
                 </div>
             </div>
             <div class="row marginto-5">
               <div class="collapse navbar-collapse justify-content-md-center col-0 bckgrnd-color" id="navbarsExample06">
                 <ul class="nav navbar-nav mb-2 col-0">
                   <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#parmums">Par mums</a></li> -->
-                  <li class="nav-item"><a class="nav-link" aria-current="page" onclick="navPage('pakalpojumi')">Pakalpojumi</a></li>
-                  <li class="nav-item"><a class="nav-link" onclick="navPage('cenas')">Cenas</a></li>
-                  <li class="nav-item"><a class="nav-link" onclick="navPage('kontakti')">Kontakti</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#pakalpojumi">Pakalpojumi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#cenas">Cenas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#kontakti">Kontakti</a></li>
                 </ul>
               </div>
             </div>
@@ -114,53 +116,53 @@
           </div>
         </div>
         <div class="row align-items-md-stretch">
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-izmeklesana-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-izmeklesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Diagnostika</h3>
                 <img src="assets/img/Pakalpojumi/Diagnostika-min.jpg" alt="Mutes veselības diagnostika">
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-plombesana-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-plombesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Zobu ārstēšana</h3>
                 <img src="assets/img/Pakalpojumi/Zobu Arstesana-min.jpg" alt="Zobu ārstēšana un bojāto zobu labošana">
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-higiena-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-higiena-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Zobu higiēna</h3>
                 <img src="assets/img/Pakalpojumi/Higiena-min.jpg" alt="Mutes dobuma higiena">
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-protezesana-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-protezesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Protezēšana</h3>
                 <img src="assets/img/Pakalpojumi/Protezesana-min.jpg" alt="Zobu protezēšana, kapes izveide, kroņi tiltiņi, implanti">
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-berni-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-berni-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Bērnu Zobārstniecība</h3>
                 <img src="assets/img/Pakalpojumi/Bernu Zobarstnieciba-min.jpg" alt="Bērnu Zobārstniecība">
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-2">
-            <a onclick="clickButton('nav-higiena-tab')">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div onclick="clickButton('nav-higiena-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
                 <h3>Balināšana</h3>
                 <img src="assets/img/Pakalpojumi/Balinasana-min.jpg" alt="Zobu balināšana">
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -180,28 +182,28 @@
           <!-- Nav tabs -->
           <nav>
             <div class="nav nav-tabs bckgrnd-color" id="nav-tab" role="tablist">
-              <button class="nav-link btn btn-light active scrollMargin" id="nav-izmeklesana-tab" data-bs-toggle="tab" data-bs-target="#nav-izmeklesana" type="button" role="tab" aria-controls="nav-izmeklesana" aria-selected="true">
+              <button class="nav-link btn btn-light active scrollMargin" id="nav-izmeklesana-tab" data-bs-toggle="tab" data-bs-target="#nav-izmeklesana" type="button" role="tab" aria-controls="nav-izmeklesana" aria-selected="true" onclick="navPage('nav-izmeklesana-tab')">
                 Izmeklēšana/Konsultācija
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-higiena-tab" data-bs-toggle="tab" data-bs-target="#nav-higiena" type="button" role="tab" aria-controls="nav-higiena" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-higiena-tab" data-bs-toggle="tab" data-bs-target="#nav-higiena" type="button" role="tab" aria-controls="nav-higiena" aria-selected="false" onclick="navPage('nav-higiena-tab')">
                 Higiēna
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-plombesana-tab" data-bs-toggle="tab" data-bs-target="#nav-plombesana" type="button" role="tab" aria-controls="nav-plombesana" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-plombesana-tab" data-bs-toggle="tab" data-bs-target="#nav-plombesana" type="button" role="tab" aria-controls="nav-plombesana" aria-selected="false" onclick="navPage('nav-plombesana-tab')">
                 Plombēšana
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-anastezija-tab" data-bs-toggle="tab" data-bs-target="#nav-anastezija" type="button" role="tab" aria-controls="nav-anastezija" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-anastezija-tab" data-bs-toggle="tab" data-bs-target="#nav-anastezija" type="button" role="tab" aria-controls="nav-anastezija" aria-selected="false" onclick="navPage('nav-anastezija-tab')">
                 Anastēzija
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-kanali-tab" data-bs-toggle="tab" data-bs-target="#nav-kanali" type="button" role="tab" aria-controls="nav-kanali" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-kanali-tab" data-bs-toggle="tab" data-bs-target="#nav-kanali" type="button" role="tab" aria-controls="nav-kanali" aria-selected="false" onclick="navPage('nav-kanali-tab')">
                 Kanālu ārstēšana
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-kirurgija-tab" data-bs-toggle="tab" data-bs-target="#nav-kirurgija" type="button" role="tab" aria-controls="nav-kirurgija" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-kirurgija-tab" data-bs-toggle="tab" data-bs-target="#nav-kirurgija" type="button" role="tab" aria-controls="nav-kirurgija" aria-selected="false" onclick="navPage('nav-kirurgija-tab')">
                 Ķirurģija
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-protezesana-tab" data-bs-toggle="tab" data-bs-target="#nav-protezesana" type="button" role="tab" aria-controls="nav-protezesana" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-protezesana-tab" data-bs-toggle="tab" data-bs-target="#nav-protezesana" type="button" role="tab" aria-controls="nav-protezesana" aria-selected="false" onclick="navPage('nav-protezesana-tab')">
                 Protezēšana
               </button>
-              <button class="nav-link btn btn-light scrollMargin" id="nav-berni-tab" data-bs-toggle="tab" data-bs-target="#nav-berni" type="button" role="tab" aria-controls="nav-berni" aria-selected="false">
+              <button class="nav-link btn btn-light scrollMargin" id="nav-berni-tab" data-bs-toggle="tab" data-bs-target="#nav-berni" type="button" role="tab" aria-controls="nav-berni" aria-selected="false" onclick="navPage('nav-berni-tab')">
                 Bērni
               </button>
             </div>
