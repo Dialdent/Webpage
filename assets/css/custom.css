@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 @media (max-width: 767.5px) {
+    .container, .container-sm {
+         max-width: 767px; 
+    }
     .navbar-brand img{
         height: 70px;
         width: 151px;
@@ -44,10 +47,10 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
     .scrollMargin{
-        scroll-margin-top: 150px;
+        scroll-margin-top: 100px;
     }
     #pakalpojumi{
-        padding-top: 150px; 
+        padding-top: 100px; 
     }
     .container-fluid{
         height: 80px;

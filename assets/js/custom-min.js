@@ -1,1 +1,1 @@
-function clickButton(t){document.getElementById(t).click();navPage(t)}function navPage(t){window.location.href="#"+t,history.pushState({},"","/")}
+function clickButton(t){document.getElementById(t).click(),navPage(t)}function navPage(t){window.location.href="#"+t,history.pushState({},"","/")}document.addEventListener("scroll",t=>{"show"==document.getElementsByClassName("navbar-collapse")[0].classList[5]&&document.getElementById("navButton").click()});
