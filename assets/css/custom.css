@@ -36,8 +36,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 @media (max-width: 767.5px) {
+    #atverti{
+        font-size: 40px;
+    }
     .container, .container-sm {
-         max-width: 767px; 
+        max-width: 767px; 
     }
     .navbar-brand img{
         height: 70px;
@@ -57,6 +60,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (min-width: 767.5px){
+    #atverti{
+        font-size: 80px;
+    }
     .navbar-brand img{
         height: 115px;
         width: 248.5px;
@@ -94,4 +100,24 @@ footer{
 }
 #pakalpojumi h2{
     font-size: calc(1.3rem + .6vw);
+}
+@keyframes reveal {
+    80%{
+        letter-spacing: 8px;
+    }
+    100% {
+        background-size: 300% 300%;
+    }
+}
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 4px #fff;
+    }
+}
+#atverti{
+    margin:30px 0 30px !important;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #2889c3, transparent, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: reveal 1000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
