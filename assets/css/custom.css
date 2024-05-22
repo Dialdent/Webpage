@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 767.5px){
     #atverti{
-        font-size: 80px;
+        font-size: 70px;
     }
     .navbar-brand img{
         height: 115px;
