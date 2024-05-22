@@ -28,6 +28,10 @@ iframe{
     width: 100%;
     border-radius: 30%;
 }
+#parmums img{
+    width: 100%;
+    border-radius: 30%;
+}
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 30px;
     display: flex;
@@ -52,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     .scrollMargin{
         scroll-margin-top: 100px;
     }
-    #pakalpojumi{
+    #parmums{
         padding-top: 100px; 
     }
     .container-fluid{
@@ -83,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     .scrollMargin{
         scroll-margin-top: 150px;
     }
-    #pakalpojumi{
+    #parmums{
         padding-top: 150px; 
     }
 }
@@ -98,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 footer{
     height: 100px;
 }
-#pakalpojumi h2{
+#pakalpojumi h2, #parmums h2{
     font-size: calc(1.3rem + .6vw);
 }
 @keyframes reveal {
