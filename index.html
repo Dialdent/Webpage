@@ -12,33 +12,112 @@
     </script>
     <!-- JSON-LD iezīmējums, kas veidots, izmantojot Google strukturēto datu marķētāju. -->
     <script type="application/ld+json">
-    [
-      {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SIA Dialdent",
-        "image": "https://dialdent.lv/assets/img/Logo-min.webp",
-        "telephone": "27212377",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Raunas iela 3A",
-          "addressLocality": "Cēsis",
-          "addressRegion": "Cēsu Novads",
-          "addressCountry": "Latvija",
-          "postalCode": "LV-4101"
-        },
-        "openingHoursSpecification": {
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dialdent Zobārstniecība",
+      "alternateName": "SIA Dialdent",
+      "description": "Mūsdienīga zobārstniecības klīnika Cēsīs, kas piedāvā diagnostiku, zobu ārstēšanu, profesionālo higiēnu, protezēšanu, zobu balināšanu un bērnu zobārstniecību. Zobārste Diāna Lelde Čekstere un pieredzējusi komanda.",
+      "url": "https://dialdent.lv/",
+      "telephone": "+371 27212377",
+      "email": "sia.dialdent@gmail.com",
+      "image": "https://dialdent.lv/og-image.jpg",
+      "logo": "https://dialdent.lv/logo.png",
+      "priceRange": "€€",
+      "medicalSpecialty": "Dentistry",
+      "areaServed": "Cēsis, Cēsu novads, Latvija",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Raunas iela 3A",
+        "addressLocality": "Cēsis",
+        "addressRegion": "Cēsu novads",
+        "postalCode": "LV-4101",
+        "addressCountry": "LV"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 57.3125,
+        "longitude": 25.2747
+      },
+      "openingHoursSpecification": [
+        {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": {
-            "@type": "DayOfWeek",
-            "name": "Monday, Tuesday, Wednesday, Thursday, Friday"
-          },
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
           "closes": "17:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Zobārstniecības pakalpojumi",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Zobu diagnostika"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Zobu ārstēšana un plombēšana"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Profesionālā zobu higiēna"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Zobu protezēšana (kronīši, tilti)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bērnu zobārstniecība"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Zobu balināšana"
+            }
+          }
+        ]
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Diāna Lelde Čekstere",
+          "jobTitle": "Zobārste",
+          "medicalSpecialty": "Dentistry"
         },
-        "url": "https://dialdent.lv"
-      }
-    ]
+        {
+          "@type": "Person",
+          "name": "Aija Grūbe",
+          "jobTitle": "Zobārsta asistente"
+        },
+        {
+          "@type": "Person",
+          "name": "Ilvita Lancmane",
+          "jobTitle": "Zobu higiēniste"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/p/Dialdent-Zob%C4%81rstniec%C4%ABba-61556624267969/",
+        "https://www.instagram.com/dialdent_zobarstnieciba/"
+      ]
+    }
     </script>
 
     <meta charset="utf-8">
