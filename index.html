@@ -21,8 +21,14 @@
       "url": "https://dialdent.lv/",
       "telephone": "+371 27212377",
       "email": "sia.dialdent@gmail.com",
-      "image": "https://dialdent.lv/og-image.jpg",
-      "logo": "https://dialdent.lv/logo.png",
+      "image": "https://dialdent.lv/assets/img/Logo-min.png",
+      "logo": "https://dialdent.lv/assets/img/Logo-min.png",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61556624267969", "https://www.instagram.com/dialdent_zobarstnieciba"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "8"
+      },
       "priceRange": "€€",
       "medicalSpecialty": "Dentistry",
       "areaServed": "Cēsis, Cēsu novads, Latvija",
@@ -122,35 +128,51 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="assets/css/custom-min.css" media="screen" charset="utf-8">
     <link rel="icon" href="assets/img/faviconLogo-min.webp">
-    <link rel="canonical" href="https://www.dialdent.lv/" />
-    <link rel="canonical" href="http://dialdent.lv/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon-min.png">
+    <link rel="canonical" href="https://dialdent.lv/" />
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Dialdent Zobārstniecība Cēsīs">
+    <meta property="og:description" content="Zobārstniecības klīnika Dialdent Cēsīs veic mutes higiēnu, zobu labošanu, gudrības zobu raušanu, protezēšanu, kanālu ārstēšanu, akūtu pieņemšanu.">
+    <meta property="og:url" content="https://dialdent.lv/">
+    <meta property="og:image" content="https://dialdent.lv/assets/img/Logo-min.png">
 
     <nav id="navbar-spy" class="navbar navbar-expand-md bg-body-tertiary fixed-top rounded mb-4">
       <div class="container-fluid bckgrnd-color">
         <a class="navbar-brand col-md-4 col-8" href="#parmums">
           <img src="assets/img/Logo-min.webp" alt="SIA Dialdent zobārstniecība Cēsīs">
         </a>
-        <button id="navButton" class="navbar-toggler col-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <div class="lang-toggle" id="langToggle">
+            <button type="button" class="lang-btn active" data-lang="lv">LV</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <button id="navButton" class="navbar-toggler col-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="container">
             <div id="headerinfo" class="row pb-4 marginto-5">
-                <div class="col-xl-2 col-md-6">
-                    <a href="https://www.facebook.com/profile.php?id=61556624267969">
+                <div class="col-xl-2 col-md-6 social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61556624267969" aria-label="Dialdent Facebook">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                    </a>
+                    <a href="https://www.instagram.com/dialdent_zobarstnieciba" aria-label="Dialdent Instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.508.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 8 0zm0 1.441c2.136 0 2.389.009 3.232.047.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.038.843.047 1.096.047 3.232s-.009 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.037-.843-.046-1.096-.046-3.232s.009-2.389.046-3.232c.035-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047zm0 2.452a4.106 4.106 0 1 0 0 8.212 4.106 4.106 0 0 0 0-8.212zm0 6.771a2.665 2.665 0 1 1 0-5.33 2.665 2.665 0 0 1 0 5.33zm5.23-6.933a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
                       </svg>
                     </a>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                    </svg> Darba dienās: 9:00-17:00
+                    </svg> <span data-en="Weekdays: 9:00-17:00">Darba dienās: 9:00-17:00</span>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg><a class="callBtn" href="tel:+371 27212377"> +371 27212377</a>
+                    </svg><a class="callBtn" href="tel:+37127212377"> +371 27212377</a>
                 </div>
                 <div class="col-xl-3 col-md-6">
                   <div onclick="navPage('kontakti')">
@@ -164,10 +186,11 @@
             <div class="row marginto-5">
               <div class="collapse navbar-collapse justify-content-md-center col-0 bckgrnd-color" id="navbarsExample06">
                 <ul class="nav navbar-nav mb-2 col-0">
-                  <li class="nav-item"><a class="nav-link active" href="#parmums">Kolektīvs</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#pakalpojumi">Pakalpojumi</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#cenas">Cenas</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#kontakti">Kontakti</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#parmums" data-en="Team">Kolektīvs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pakalpojumi" data-en="Services">Pakalpojumi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#cenas" data-en="Prices">Cenas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#atsauksmes" data-en="Reviews">Atsauksmes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#kontakti" data-en="Contact">Kontakti</a></li>
                 </ul>
               </div>
             </div>
@@ -176,11 +199,34 @@
     </nav>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="0" tabindex="0">
+      <!-- Mobile quick-contact bar -->
+      <div class="mobile-contact-bar">
+        <a class="mc-seg mc-call" href="tel:+37127212377">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          <span data-en="Call">Zvanīt</span>
+        </a>
+        <a class="mc-seg mc-wa" href="https://wa.me/37127212377" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M2.5 14 3.6 10.6A6.6 6.6 0 1 1 6.2 12.9L2.5 14ZM6.4 4.6c-.2 0-.4.1-.5.3-.2.3-.7 1-.5 2 .2 1.1 1.4 2.5 1.6 2.7.2.2 1.9 2.1 4.5 2.6.5.1.9 0 1.3-.1.4-.1 1.2-.5 1.4-1 .2-.4.2-.8.1-1-.1-.1-.2-.2-.5-.3l-1.4-.7c-.2-.1-.4 0-.5.1l-.5.6c-.1.1-.3.2-.5.1-.3-.1-1.1-.4-2-1.2-.7-.7-1.1-1.5-1.3-1.8-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.1-.4l-.5-1.5c-.1-.3-.3-.3-.4-.3H6.4Z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <a class="mc-seg mc-mail" href="mailto:sia.dialdent@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.2l-7 4.4-7-4.4V4Zm0 1.6V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.6l-6.7 4.2a.5.5 0 0 1-.6 0L1 5.6Z"/>
+          </svg>
+          <span data-en="Email">E-pasts</span>
+        </a>
+      </div>
       <!-- Section: Par mums -->
       <div id="parmums" class="container mb-4">
         <div class="section-heading">
-<!--           <h1 id="atverti">Maijā visam -10%!</h1> -->
-          <h1>Kolektīvs</h1>
+          <h1 id="pageTitle" data-en="Dialdent Dental Clinic in Cēsis">Zobārstniecība Dialdent Cēsīs</h1>
+        </div>
+        <div class="section-heading">
+          <h2 data-en="Our Team">Kolektīvs</h2>
         </div>
         <div class="row align-items-md-stretch">
           <div class="col-sm-6 col-lg-4 mb-2">
@@ -190,7 +236,7 @@
                   <table style="height: 100%; width: 100%;">
                     <tbody>
                       <tr>
-                        <td class="d-flex justify-content-center"><h2>Zobārste</h2></td>
+                        <td class="d-flex justify-content-center"><h2 data-en="Dentist">Zobārste</h2></td>
                       </tr>
                       <tr>
                         <td class="d-flex justify-content-center"><p>Diāna Lelde Čekstere</p></td>
@@ -211,7 +257,7 @@
                   <table style="height: 100%; width: 100%;">
                     <tbody>
                       <tr>
-                        <td class="d-flex justify-content-center"><h2>Asistente</h2></td>
+                        <td class="d-flex justify-content-center"><h2 data-en="Assistant">Asistente</h2></td>
                       </tr>
                       <tr>
                         <td class="d-flex justify-content-center"><p>Aija Grūbe</p></td>
@@ -232,7 +278,7 @@
                   <table style="height: 100%; width: 100%;">
                     <tbody>
                       <tr>
-                        <td class="d-flex justify-content-center"><h2>Higiēniste</h2></td>
+                        <td class="d-flex justify-content-center"><h2 data-en="Hygienist">Higiēniste</h2></td>
                       </tr>
                       <tr>
                         <td class="d-flex justify-content-center"><p>Ilvita Lancmane</p></td>
@@ -252,7 +298,7 @@
       <!-- Section: Pakalpojumi -->
       <div id="pakalpojumi" class="container mb-4">
         <div class="section-heading">
-          <h1>Pakalpojumi</h1>
+          <h2 data-en="Services">Pakalpojumi</h2>
           <!-- div class="arrow_down">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
@@ -263,7 +309,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-izmeklesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Diagnostika</h2>
+                <h2 data-en="Diagnostics">Diagnostika</h2>
                 <img src="assets/img/Pakalpojumi/Diagnostika-min.webp" alt="Mutes veselības diagnostika">
               </div>
             </div>
@@ -271,7 +317,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-plombesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Zobu ārstēšana</h2>
+                <h2 data-en="Tooth Treatment">Zobu ārstēšana</h2>
                 <img src="assets/img/Pakalpojumi/Zobu Arstesana-min.webp" alt="Zobu ārstēšana un bojāto zobu labošana">
               </div>
             </div>
@@ -279,7 +325,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-higiena-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Zobu higiēna</h2>
+                <h2 data-en="Dental Hygiene">Zobu higiēna</h2>
                 <img src="assets/img/Pakalpojumi/Higiena-min.webp" alt="Mutes dobuma higiena">
               </div>
             </div>
@@ -287,7 +333,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-protezesana-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Protezēšana</h2>
+                <h2 data-en="Prosthetics">Protezēšana</h2>
                 <img src="assets/img/Pakalpojumi/Protezesana-min.webp" alt="Zobu protezēšana, kapes izveide, kroņi tiltiņi, implanti">
               </div>
             </div>
@@ -295,7 +341,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-berni-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Bērnu zobārsts</h2>
+                <h2 data-en="Children's Dentistry">Bērnu zobārsts</h2>
                 <img src="assets/img/Pakalpojumi/Bernu Zobarstnieciba-min.webp" alt="Bērnu Zobārstniecība">
               </div>
             </div>
@@ -303,7 +349,7 @@
           <div class="col-sm-6 col-lg-4 mb-2">
             <div onclick="clickButton('nav-higiena-tab')">
               <div class="h-100 p-5 bg-body-tertiary border rounded-3 bckgrnd-color">
-                <h2>Balināšana</h2>
+                <h2 data-en="Whitening">Balināšana</h2>
                 <img src="assets/img/Pakalpojumi/Balinasana-min.webp" alt="Zobu balināšana">
               </div>
             </div>
@@ -315,7 +361,7 @@
       <!-- Section: Cenas -->
       <div id="cenas" class="container mb-4 scrollMargin">
         <div class="section-heading">
-          <h1>Cenas</h1>
+          <h2 data-en="Prices">Cenas</h2>
           <!-- <div class="arrow_down">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
@@ -325,31 +371,33 @@
         <div class="row align-items-md-stretch">
           <!-- Nav tabs -->
           <nav>
+            <div class="tabsScrollWrap">
             <div class="nav nav-tabs bckgrnd-color" id="nav-tab" role="tablist">
               <button class="nav-link btn btn-light active scrollMargin" id="nav-izmeklesana-tab" data-bs-toggle="tab" data-bs-target="#nav-izmeklesana" type="button" role="tab" aria-controls="nav-izmeklesana" aria-selected="true" onclick="navPage('nav-izmeklesana-tab')">
-                <text class='text-dark'>Izmeklēšana/Konsultācija</text>
+                <text class='text-dark' data-en="Examination/Consultation">Izmeklēšana/Konsultācija</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-higiena-tab" data-bs-toggle="tab" data-bs-target="#nav-higiena" type="button" role="tab" aria-controls="nav-higiena" aria-selected="false" onclick="navPage('nav-higiena-tab')">
-                <text class='text-dark'>Higiēna</text>
+                <text class='text-dark' data-en="Hygiene">Higiēna</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-plombesana-tab" data-bs-toggle="tab" data-bs-target="#nav-plombesana" type="button" role="tab" aria-controls="nav-plombesana" aria-selected="false" onclick="navPage('nav-plombesana-tab')">
-                <text class='text-dark'>Plombēšana</text>
+                <text class='text-dark' data-en="Fillings">Plombēšana</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-anastezija-tab" data-bs-toggle="tab" data-bs-target="#nav-anastezija" type="button" role="tab" aria-controls="nav-anastezija" aria-selected="false" onclick="navPage('nav-anastezija-tab')">
-                <text class='text-dark'>Anastēzija</text>
+                <text class='text-dark' data-en="Anesthesia">Anastēzija</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-kanali-tab" data-bs-toggle="tab" data-bs-target="#nav-kanali" type="button" role="tab" aria-controls="nav-kanali" aria-selected="false" onclick="navPage('nav-kanali-tab')">
-                <text class='text-dark'>Kanālu ārstēšana</text>
+                <text class='text-dark' data-en="Root Canal Treatment">Kanālu ārstēšana</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-kirurgija-tab" data-bs-toggle="tab" data-bs-target="#nav-kirurgija" type="button" role="tab" aria-controls="nav-kirurgija" aria-selected="false" onclick="navPage('nav-kirurgija-tab')">
-                <text class='text-dark'>Ķirurģija</text>
+                <text class='text-dark' data-en="Surgery">Ķirurģija</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-protezesana-tab" data-bs-toggle="tab" data-bs-target="#nav-protezesana" type="button" role="tab" aria-controls="nav-protezesana" aria-selected="false" onclick="navPage('nav-protezesana-tab')">
-                <text class='text-dark'>Protezēšana</text>
+                <text class='text-dark' data-en="Prosthetics">Protezēšana</text>
               </button>
               <button class="nav-link btn btn-light scrollMargin" id="nav-berni-tab" data-bs-toggle="tab" data-bs-target="#nav-berni" type="button" role="tab" aria-controls="nav-berni" aria-selected="false" onclick="navPage('nav-berni-tab')">
-                <text class='text-dark'>Bērni</text>
+                <text class='text-dark' data-en="Children">Bērni</text>
               </button>
+            </div>
             </div>
           </nav>
           <!-- Tab panes -->
@@ -358,21 +406,21 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Konsultācija</td>
+                    <td data-en="Consultation">Konsultācija</td>
                     <td>30</td>
                   </tr>
                   <tr>
-                    <td>Statusa noteikšana, pacienta apskate</td>
+                    <td data-en="Diagnosis, patient examination">Statusa noteikšana, pacienta apskate</td>
                     <td>10</td>
                   </tr>
                   <tr>
-                    <td>RTG uzņēmums</td>
+                    <td data-en="X-ray">RTG uzņēmums</td>
                     <td>10</td>
                   </tr>
                   <!-- <tr>
@@ -384,15 +432,15 @@
                     <td>150</td>
                   </tr> -->
                   <tr>
-                    <td>Neatcelta vizīte</td>
+                    <td data-en="Missed appointment">Neatcelta vizīte</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Akūta pacienta pieņemšana</td>
+                    <td data-en="Emergency patient admission">Akūta pacienta pieņemšana</td>
                     <td>20</td>
                   </tr>
                   <tr>
-                    <td>Darba vietas sagatavošana</td>
+                    <td data-en="Workspace preparation">Darba vietas sagatavošana</td>
                     <td>10</td>
                   </tr>
                 </tbody>
@@ -402,45 +450,45 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Mutes higiēna</td>
+                    <td data-en="Oral hygiene">Mutes higiēna</td>
                     <td>70</td>
                   </tr>
                   <tr>
-                    <td>Mutes higiēna ar sodas strūklu</td>
+                    <td data-en="Oral hygiene with soda jet">Mutes higiēna ar sodas strūklu</td>
                     <td>80</td>
                   </tr>
                   <tr>
-                    <td>Zobakmens noņemšana vienam zobam</td>
+                    <td data-en="Tartar removal, one tooth">Zobakmens noņemšana vienam zobam</td>
                     <td>5</td>
                   </tr>
                   <tr>
-                    <td>Zobu balināšana abiem žokļiem</td>
+                    <td data-en="Teeth whitening, both jaws">Zobu balināšana abiem žokļiem</td>
                     <td>300</td>
                   </tr>
                   <tr>
-                    <td>Zobu balināšana vienam žoklim</td>
+                    <td data-en="Teeth whitening, one jaw">Zobu balināšana vienam žoklim</td>
                     <td>190</td>
                   </tr>
                   <tr>
-                    <td>Silants 1 zobam</td>
+                    <td data-en="Sealant, one tooth">Silants 1 zobam</td>
                     <td>20</td>
                   </tr>
                   <tr>
-                    <td>Fluorīda lakas uzklāšana</td>
+                    <td data-en="Fluoride varnish application">Fluorīda lakas uzklāšana</td>
                     <td>10</td>
                   </tr>
                   <tr>
-                    <td>Laka jūtīgiem zobiem (1 zobam)</td>
+                    <td data-en="Varnish for sensitive teeth (1 tooth)">Laka jūtīgiem zobiem (1 zobam)</td>
                     <td>5</td>
                   </tr>
                   <tr>
-                    <td>Higiēnista konsultācija</td>
+                    <td data-en="Hygienist consultation">Higiēnista konsultācija</td>
                     <td>15</td>
                   </tr>
                 </tbody>
@@ -450,61 +498,61 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Zoba kavitātes veidošana un pagaidu slēgšana</td>
+                    <td data-en="Cavity preparation and temporary filling">Zoba kavitātes veidošana un pagaidu slēgšana</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Stikla jonomērs, viena virsma</td>
+                    <td data-en="Glass ionomer, one surface">Stikla jonomērs, viena virsma</td>
                     <td>45</td>
                   </tr>
                   <tr>
-                    <td>Kompozīta plomba 1 virsmai</td>
+                    <td data-en="Composite filling, 1 surface">Kompozīta plomba 1 virsmai</td>
                     <td>75</td>
                   </tr>
                   <tr>
-                    <td>Kompozīta plomba 2 virsmām</td>
+                    <td data-en="Composite filling, 2 surfaces">Kompozīta plomba 2 virsmām</td>
                     <td>80</td>
                   </tr>
                   <tr>
-                    <td>Kompozīta plomba 3 virsmām</td>
+                    <td data-en="Composite filling, 3 surfaces">Kompozīta plomba 3 virsmām</td>
                     <td>85</td>
                   </tr>
                   <tr>
-                    <td>Kompozīta plomba 4 virsmām</td>
+                    <td data-en="Composite filling, 4 surfaces">Kompozīta plomba 4 virsmām</td>
                     <td>90</td>
                   </tr>
                   <tr>
-                    <td>Zoba kronīša atjaunošana</td>
+                    <td data-en="Tooth crown restoration">Zoba kronīša atjaunošana</td>
                     <td>100</td>
                   </tr>
                   <tr>
-                    <td>Vecās plombas izņemšana</td>
+                    <td data-en="Old filling removal">Vecās plombas izņemšana</td>
                     <td>15</td>
                   </tr>
                   <tr>
-                    <td>Stikla šķiedras tapas modulēšana un cementēšana saknes kanālā</td>
+                    <td data-en="Fiberglass post shaping and cementing in root canal">Stikla šķiedras tapas modulēšana un cementēšana saknes kanālā</td>
                     <td>100</td>
                   </tr>
                   <tr>
-                    <td>Kroņa daļas veidošana uz stikla šķiedras tapas zem kroņa</td>
+                    <td data-en="Crown build-up on fiberglass post under crown">Kroņa daļas veidošana uz stikla šķiedras tapas zem kroņa</td>
                     <td>65</td>
                   </tr>
                   <tr>
-                    <td>Stikla jonomēra odere</td>
+                    <td data-en="Glass ionomer liner">Stikla jonomēra odere</td>
                     <td>20</td>
                   </tr>
                   <tr>
-                    <td>Koferdama izmantošana</td>
+                    <td data-en="Rubber dam use">Koferdama izmantošana</td>
                     <td>20</td>
                   </tr>
                   <tr>
-                    <td>MTA aplikācija</td>
+                    <td data-en="MTA application">MTA aplikācija</td>
                     <td>50</td>
                   </tr>
                 </tbody>
@@ -514,21 +562,21 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Virsmas anastēzija</td>
+                    <td data-en="Topical anesthesia">Virsmas anastēzija</td>
                     <td>5</td>
                   </tr>
                   <tr>
-                    <td>Infiltrācijas anastēzija</td>
+                    <td data-en="Infiltration anesthesia">Infiltrācijas anastēzija</td>
                     <td>10</td>
                   </tr>
                   <tr>
-                    <td>Mandibulārā anastēzija</td>
+                    <td data-en="Mandibular anesthesia">Mandibulārā anastēzija</td>
                     <td>15</td>
                   </tr>
                 </tbody>
@@ -538,37 +586,37 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1 kanāla apstrāde ar protaper</td>
+                    <td data-en="1 canal treatment with ProTaper">1 kanāla apstrāde ar protaper</td>
                     <td>45</td>
                   </tr>
                   <tr>
-                    <td>CA(OH)2 aplikācija saknes kanālā un pagaidu slēgšana</td>
+                    <td data-en="Ca(OH)2 application in root canal and temporary filling">CA(OH)2 aplikācija saknes kanālā un pagaidu slēgšana</td>
                     <td>40</td>
                   </tr>
                   <tr>
-                    <td>1 kanāla pildīšana ar gutaperču</td>
+                    <td data-en="1 canal filling with gutta-percha">1 kanāla pildīšana ar gutaperču</td>
                     <td>45</td>
                   </tr>
                   <tr>
-                    <td>1 palīdzība akūtu sāpju gadījumā</td>
+                    <td data-en="Emergency pain relief">1 palīdzība akūtu sāpju gadījumā</td>
                     <td>60</td>
                   </tr>
                   <tr>
-                    <td>Kanālā pildījuma izņemšana pie pārārstēšanas </td>
+                    <td data-en="Root filling removal for retreatment">Kanālā pildījuma izņemšana pie pārārstēšanas </td>
                     <td>75</td>
                   </tr>
                   <tr>
-                    <td>Zāļu nomaiņa starpseansos</td>
+                    <td data-en="Medication replacement between sessions">Zāļu nomaiņa starpseansos</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Zoba trepenācija caur kroni</td>
+                    <td data-en="Tooth trepanation through crown">Zoba trepenācija caur kroni</td>
                     <td>60</td>
                   </tr>
                 </tbody>
@@ -578,49 +626,49 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Kustīga zoba ekstrakcija </td>
+                    <td data-en="Loose tooth extraction">Kustīga zoba ekstrakcija </td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>1 saknes zoba ekstrakcija</td>
+                    <td data-en="Single-root tooth extraction">1 saknes zoba ekstrakcija</td>
                     <td>60</td>
                   </tr>
                   <tr>
-                    <td>1 saknes zoba ekstrakcija ar osteotomiju</td>
+                    <td data-en="Single-root tooth extraction with osteotomy">1 saknes zoba ekstrakcija ar osteotomiju</td>
                     <td>75</td>
                   </tr>
                   <tr>
-                    <td>Daudzsakņu zoba ekstrakcija</td>
+                    <td data-en="Multi-root tooth extraction">Daudzsakņu zoba ekstrakcija</td>
                     <td>85</td>
                   </tr>
                   <tr>
-                    <td>Daudzsakņu zoba ekstrakcija ar dalīšanu vai osteotomiju</td>
+                    <td data-en="Multi-root tooth extraction with sectioning or osteotomy">Daudzsakņu zoba ekstrakcija ar dalīšanu vai osteotomiju</td>
                     <td>100</td>
                   </tr>
                   <tr>
-                    <td>Sarežģīta zoba ekstrakcija</td>
+                    <td data-en="Complex tooth extraction">Sarežģīta zoba ekstrakcija</td>
                     <td>110-150</td>
                   </tr>
                   <tr>
-                    <td>Šuvju uzlikšana</td>
+                    <td data-en="Suture placement">Šuvju uzlikšana</td>
                     <td>25</td>
                   </tr>
                   <tr>
-                    <td>Šuvju noņemšana no citas klīnikas</td>
+                    <td data-en="Suture removal (from another clinic)">Šuvju noņemšana no citas klīnikas</td>
                     <td>15</td>
                   </tr>
                   <tr>
-                    <td>Alveolīta ārstēšana</td>
+                    <td data-en="Alveolitis (dry socket) treatment">Alveolīta ārstēšana</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Incīzija un drenāža</td>
+                    <td data-en="Incision and drainage">Incīzija un drenāža</td>
                     <td>40</td>
                   </tr>
                 </tbody>
@@ -630,85 +678,85 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Metālkeramikas kronis 1 vienība</td>
+                    <td data-en="Metal-ceramic crown, 1 unit">Metālkeramikas kronis 1 vienība</td>
                     <td>400</td>
                   </tr>
                   <tr>
-                    <td>Keramikas kronis 1 vienība</td>
+                    <td data-en="Ceramic crown, 1 unit">Keramikas kronis 1 vienība</td>
                     <td>400</td>
                   </tr>
                   <tr>
-                    <td>Cirkonija kronis 1 vienība</td>
+                    <td data-en="Zirconia crown, 1 unit">Cirkonija kronis 1 vienība</td>
                     <td>500-700</td>
                   </tr>
                   <tr>
-                    <td>Silikona nospiedums</td>
+                    <td data-en="Silicone impression">Silikona nospiedums</td>
                     <td>30</td>
                   </tr>
                   <tr>
-                    <td>Algināta nospiedums</td>
+                    <td data-en="Alginate impression">Algināta nospiedums</td>
                     <td>25</td>
                   </tr>
                   <tr>
-                    <td>Digitālais nospiedums 1 žoklim</td>
+                    <td data-en="Digital impression, 1 jaw">Digitālais nospiedums 1 žoklim</td>
                     <td>35</td>
                   </tr>
                   <tr>
-                    <td>Nakts kape</td>
+                    <td data-en="Night guard">Nakts kape</td>
                     <td>100</td>
                   </tr>
                   <tr>
-                    <td>Elastīgā (valplast) 1 zoba protēze</td>
+                    <td data-en="Flexible (Valplast) denture, 1 tooth">Elastīgā (valplast) 1 zoba protēze</td>
                     <td>300</td>
                   </tr>
                   <tr>
-                    <td>Elastīgā (valplast) 2-4 zobu protēze</td>
+                    <td data-en="Flexible (Valplast) denture, 2-4 teeth">Elastīgā (valplast) 2-4 zobu protēze</td>
                     <td>450</td>
                   </tr>
                   <tr>
-                    <td>Elastīgā (valplast) 5-12 zobu protēze</td>
+                    <td data-en="Flexible (Valplast) denture, 5-12 teeth">Elastīgā (valplast) 5-12 zobu protēze</td>
                     <td>590</td>
                   </tr>
                   <tr>
-                    <td>Plastmasas parciālā protēze ar metāla skavām</td>
+                    <td data-en="Acrylic partial denture with metal clasps">Plastmasas parciālā protēze ar metāla skavām</td>
                     <td>300-400</td>
                   </tr>
                   <tr>
-                    <td>Totālā protēze </td>
+                    <td data-en="Full denture">Totālā protēze </td>
                     <td>400-500</td>
                   </tr>
                   <tr>
-                    <td>Diagnostiskie veiduļi</td>
+                    <td data-en="Diagnostic wax-up">Diagnostiskie veiduļi</td>
                     <td>35</td>
                   </tr>
                   <tr>
-                    <td>Diagnostiskais veidulis ar zoba vaskojumu</td>
+                    <td data-en="Diagnostic wax-up with tooth waxing">Diagnostiskais veidulis ar zoba vaskojumu</td>
                     <td>45</td>
                   </tr>
                   <tr>
-                    <td>Individuālā karote</td>
+                    <td data-en="Custom impression tray">Individuālā karote</td>
                     <td>30</td>
                   </tr>
                   <tr>
-                    <td>Kroņa cementēšana</td>
+                    <td data-en="Crown cementation">Kroņa cementēšana</td>
                     <td>55</td>
                   </tr>
                   <tr>
-                    <td>Kroņa noņemšana</td>
+                    <td data-en="Crown removal">Kroņa noņemšana</td>
                     <td>40</td>
                   </tr>
                   <tr>
-                    <td>Protēzes labošana</td>
+                    <td data-en="Denture repair">Protēzes labošana</td>
                     <td>80-100</td>
                   </tr>
                   <tr>
-                    <td>Pagaidu kronis</td>
+                    <td data-en="Temporary crown">Pagaidu kronis</td>
                     <td>50</td>
                   </tr>
                 </tbody>
@@ -718,69 +766,159 @@
               <table class="table table-bordered table-striped">
                 <thead>
                   <tr>
-                    <th scope="col">Manipulācija</th>
-                    <th scope="col">Cena EUR</th>
+                    <th scope="col" data-en="Procedure">Manipulācija</th>
+                    <th scope="col" data-en="Price EUR">Cena EUR</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Piena zoba ektrakcija</td>
+                    <td data-en="Baby tooth extraction">Piena zoba ektrakcija</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Piena zoba plombēšana 1 virsma</td>
+                    <td data-en="Baby tooth filling, 1 surface">Piena zoba plombēšana 1 virsma</td>
                     <td>40</td>
                   </tr>
                   <tr>
-                    <td>Piena zoba plombēšana 2 virsmas</td>
+                    <td data-en="Baby tooth filling, 2 surfaces">Piena zoba plombēšana 2 virsmas</td>
                     <td>45</td>
                   </tr>
                   <tr>
-                    <td>Piena zoba plombēšana 3 virsmas</td>
+                    <td data-en="Baby tooth filling, 3 surfaces">Piena zoba plombēšana 3 virsmas</td>
                     <td>50</td>
                   </tr>
                   <tr>
-                    <td>Piena zoba plombēšana 4 un vairāk virsmās</td>
+                    <td data-en="Baby tooth filling, 4+ surfaces">Piena zoba plombēšana 4 un vairāk virsmās</td>
                     <td>55</td>
                   </tr>
                   <tr>
-                    <td>Nesekmīga vizīte</td>
+                    <td data-en="Unsuccessful visit">Nesekmīga vizīte</td>
                     <td>35</td>
                   </tr>
                   <tr>
-                    <td>Pulpotomija (sāpīga zoba gadījumā)</td>
+                    <td data-en="Pulpotomy (for a painful tooth)">Pulpotomija (sāpīga zoba gadījumā)</td>
                     <td>40</td>
                   </tr>
                   <tr>
-                    <td>Zobu higiēna līdz 2 gadiem</td>
+                    <td data-en="Dental hygiene, up to 2 years">Zobu higiēna līdz 2 gadiem</td>
                     <td>15</td>
                   </tr>
                   <tr>
-                    <td>Zobu higiēna no 2 līdz 7 gadiem</td>
+                    <td data-en="Dental hygiene, 2 to 7 years">Zobu higiēna no 2 līdz 7 gadiem</td>
                     <td>30</td>
                   </tr>
                   <tr>
-                    <td>Zobu higiēna no 8 līdz 14 gadiem</td>
+                    <td data-en="Dental hygiene, 8 to 14 years">Zobu higiēna no 8 līdz 14 gadiem</td>
                     <td>35-50</td>
                   </tr>
                   <tr>
-                    <td>Zobu higiēna no 14 līdz 18 gadiem</td>
+                    <td data-en="Dental hygiene, 14 to 18 years">Zobu higiēna no 14 līdz 18 gadiem</td>
                     <td>40-70</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-        
-          
+
+
         </div>
       </div>
       <!-- Section: Cenas -->
 
+      <!-- Section: Atsauksmes -->
+      <div id="atsauksmes" class="container mb-4 scrollMargin">
+        <div class="section-heading">
+          <h2 data-en="Reviews">Atsauksmes</h2>
+        </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-auto">
+            <div class="d-flex align-items-center gap-3 p-3 bg-body-tertiary border rounded-3 bckgrnd-color flex-wrap justify-content-center reviewSummary">
+              <svg class="googleG" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+              </svg>
+              <div>
+                <strong data-en="Google Rating">Google vērtējums</strong><br>
+                <span class="reviewStars">★★★★★</span> <strong>5,0</strong> &middot; <span data-en="based on 8 reviews">pamatojoties uz 8 atsauksmēm</span>
+              </div>
+              <a href="https://www.google.com/maps?cid=14488180599925494947" target="_blank" rel="noopener" class="btn btn-primary" data-en="Write a review">Rakstīt atsauksmi</a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-md-stretch">
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color reviewCard">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="reviewAvatar">D</span>
+                  <div>
+                    <strong>Deroxel</strong><br>
+                    <span class="reviewStarsSm">★★★★★</span>
+                  </div>
+                </div>
+                <svg class="googleG googleGsm" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                  <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                  <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                  <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+                </svg>
+              </div>
+              <p class="reviewText">Esmu ļoti apmierināts ar apkalpošanu. Personāls bija ļoti laipns un profesionāls, un daktere bija ļoti zinoša un rūpīga. Viņa veltīja laiku, lai man visu rūpīgi un saprotami izskaidrotu un ārstēšanas iespējas, kā rezultātā es jutos ļoti komfortabli viņu rokās.<br><br>Bija jāiet uz vairākām vizītēm, bet varējām visu laicīgi izplānot un bija ļoti pretīmnākoši pielāgoties manām vajadzībām. Darbu izdarījā rūpīgi un kvalitatīvi, ka no malas nevar maz manīt.<br><br>Ļoti iesaku jebkuram Cēsu rajonā!</p>
+              <span class="reviewDate" data-en="a year ago">pirms gada</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color reviewCard">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="reviewAvatar">J</span>
+                  <div>
+                    <strong>Jānis Kalniņš</strong><br>
+                    <span class="reviewStarsSm">★★★★★</span>
+                  </div>
+                </div>
+                <svg class="googleG googleGsm" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                  <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                  <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                  <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+                </svg>
+              </div>
+              <p class="reviewText">Biju pārsteigts, lieliska attieksme un profesionāls darbs. Bija steidzami nepieciešams zobārsts un varēja pieņemt izņēmuma gadījumā. Noteikti atgriezīšos arī nākamreiz.</p>
+              <span class="reviewDate" data-en="a year ago · Local Guide">pirms gada &middot; Local Guide</span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-2">
+            <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color reviewCard">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="reviewAvatar">K</span>
+                  <div>
+                    <strong>Kaspars Zombergs</strong><br>
+                    <span class="reviewStarsSm">★★★★★</span>
+                  </div>
+                </div>
+                <svg class="googleG googleGsm" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                  <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                  <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                  <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+                </svg>
+              </div>
+              <p class="reviewText">Personāls ir profesionāls un laipns. Ātri var pierakstīties. Auto ir viegli novietot. Laba lokācija.</p>
+              <span class="reviewDate" data-en="a year ago">pirms gada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section: Atsauksmes -->
+
       <!-- Section: Kontakti -->
       <div id="kontakti" class="container mb-4 scrollMargin">
         <div class="section-heading">
-          <h1>Kontakti</h1>
+          <h2 data-en="Contact">Kontakti</h2>
           <!-- <div class="arrow_down">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
@@ -795,24 +933,23 @@
             <div class="col-sm-5">
               <div class="col-md-0 mb-2">
                 <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color">
-                  <h3>Telefons pierakstam</h3>
-                  <p><a class="callBtn" href="tel:+371 27212377">+371 27212377</a></p>
+                  <h3 data-en="Phone for appointments">Telefons pierakstam</h3>
+                  <p><a class="callBtn" href="tel:+37127212377">+371 27212377</a></p>
                 </div>
               </div>
               <div class="col-md-0 mb-2">
                 <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color">
-                  <h3>Darba laiks un vieta</h3>
-                  <!-- <i>Zobārstniecība darbību sāks 29. Aprīlī</i> -->
-                  <p>Darba dienās: 9:00-17:00</p>
+                  <h3 data-en="Hours &amp; Location">Darba laiks un vieta</h3>
+                  <p data-en="Weekdays: 9:00-17:00">Darba dienās: 9:00-17:00</p>
                   <p>Raunas iela 3A, Cēsis, Cēsu novads, LV-4101</p>
                 </div>
               </div>
               <div class="col-md-0 mb-2">
-                <div class="h-100 p-4 bg-body-tertiary border rounded-3 bckgrnd-color">
-                  <h3>Rekvizīti</h3>
-                  <p>PVN maksātāja numurs: LV40203508200</p>
-                  <p>Reģistrācijas numurs: 40203508200</p>
-                  <p>Konta numurs: LV11HABA0551055590519</p>
+                <div class="h-100 p-2 bg-body-tertiary border rounded-3 bckgrnd-color demoted-card">
+                  <h3 data-en="Company Details">Uzņēmuma rekvizīti</h3>
+                  <p data-en="VAT number: LV40203508200">PVN maksātāja numurs: LV40203508200</p>
+                  <p data-en="Registration number: 40203508200">Reģistrācijas numurs: 40203508200</p>
+                  <p data-en="Account number: LV11HABA0551055590519">Konta numurs: LV11HABA0551055590519</p>
                 </div>
               </div>
             </div>
@@ -831,24 +968,6 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      jQuery.event.special.touchmove = {
-          setup: function( _, ns, handle ) {
-              this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
-          }
-      };
-      jQuery.event.special.wheel = {
-          setup: function( _, ns, handle ){
-              this.addEventListener("wheel", handle, { passive: true });
-          }
-      };
-      jQuery.event.special.mousewheel = {
-          setup: function( _, ns, handle ){
-              this.addEventListener("mousewheel", handle, { passive: true });
-          }
-      };
-    </script>
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/custom-min.js"></script>
   </body>

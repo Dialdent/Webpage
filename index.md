@@ -4,9 +4,9 @@ description: Profesionāla zobārstniecības klīnika Cēsis. Diāna Lelde Čeks
 keywords: zobārstniecība Cēsis, zobārsts Cēsis, bērnu zobārsts Cēsis, zobu protezēšana Cēsis, zobu higiēna Cēsis, zobu balināšana Cēsis, Dialdent, Diāna Lelde Čekstere, zobārstniecība Cēsu novadā, family dentistry Cesis Latvia
 slug: index
 language: lv
-og_image: https://dialdent.lv/og-image.jpg
+og_image: https://dialdent.lv/assets/img/Logo-min.png
 date: 2026-04-08
-updated: 2026-04-08
+updated: 2026-10-01
 type: business
 business_type: Dental Clinic
 location: Cēsis, Latvia
@@ -25,7 +25,8 @@ location: Cēsis, Latvia
 - **Adrese:** Raunas iela 3A, Cēsis, Cēsu novads, LV-4101
 - **Telefons pierakstam:** [+371 27212377](tel:+37127212377)
 - **Darba laiks:** Darba dienās no 9:00 līdz 17:00 (piektdienās līdz 17:00)
-- **E-pasts:** (pieejams piezvanot)
+- **E-pasts:** sia.dialdent@gmail.com
+- **WhatsApp:** [+371 27212377](https://wa.me/37127212377)
 
 ## 🦷 Pakalpojumi (Services)
 
@@ -46,7 +47,7 @@ Visi pakalpojumi tiek veikti ar mūsdienīgām tehnoloģijām un augstas kvalit�
 - **Ilvita Lancmane** – Zobu higiēniste.
 
 ## 💰 Cenas
-Aktuālās cenas pieejamas klīnikā vai piezvanot pa tālruni +371 27212377. Mēs piedāvājam godīgas un caurspīdīgas cenas.
+Dialdent publicē pilnu, caurspīdīgu cenrādi savā vietnē (sadaļa "Cenas"): diagnostika, higiēna, plombēšana, anestēzija, kanālu ārstēšana, ķirurģija, protezēšana un bērnu zobārstniecība, ar cenām aptuveni no 5 EUR līdz vairākiem simtiem EUR atkarībā no procedūras. Precīzu cenu konkrētam gadījumam apstiprina pēc apskates, piesakoties pa tālruni +371 27212377.
 
 ## 🔍 Kāpēc izvēlēties Dialdent?
 - Ģimenes zobārstniecība Cēsis
