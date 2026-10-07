@@ -225,6 +225,28 @@
         <div class="section-heading">
           <h1 id="pageTitle" data-en="Dialdent Dental Clinic in Cēsis">Zobārstniecība Dialdent Cēsīs</h1>
         </div>
+        <div id="infoSlider" class="carousel slide mb-4">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="info-slide bckgrnd-color border rounded-3 p-3 p-md-4">
+                <p class="mb-0" data-en="Welcome to our clinic. Below you can get to know our team, services, and prices.">Esat laipni gaidīti mūsu klīnikā. Zemāk varat iepazīties ar mūsu personālu, pakalpojumiem un cenām.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-month="october">
+              <div class="info-slide bckgrnd-color border rounded-3 p-3 p-md-4">
+                <p class="mb-0" data-en='Did you know? October is National Dental Hygiene Month &mdash; the &quot;four daily habits&quot; for a healthy smile: brushing for two minutes, flossing daily, rinsing with antimicrobial mouthwash, and chewing sugar-free gum.'>Vai zinājāt? Oktobris ir Zobu higiēnas mēnesis &mdash; &bdquo;četri ikdienas paradumi&ldquo; veselīgam smaidam: zobu tīrīšana divas minūtes, zobu diegu lietošana katru dienu, skalošana ar antibakteriālu mutes skalojamo līdzekli un cukuru nesaturošas košļājamās gumijas košļāšana.</p>
+              </div>
+            </div>
+            <!-- Discount code slide, hidden for now. Uncomment to bring it back.
+            <div class="carousel-item">
+              <div class="info-slide bckgrnd-color border rounded-3 p-3 p-md-4">
+                <p class="mb-0" data-en='Website discount code: &quot;Dialdent10%&quot;. After your appointment, mention the discount code and get 10% off any procedure!'>Mājaslapas atlaides kods: &bdquo;Dialdent10%&ldquo;. Pēc ārsta vizītes nosauc atlaides kodu un iegūsti 10% atlaidi jebkurai manipulācijai!</p>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="carousel-indicators" id="infoSliderIndicators"></div>
+        </div>
         <div class="section-heading">
           <h2 data-en="Our Team">Kolektīvs</h2>
         </div>
@@ -296,7 +318,7 @@
       </div>
       <!-- Section: Par mums -->
       <!-- Section: Pakalpojumi -->
-      <div id="pakalpojumi" class="container mb-4">
+      <div id="pakalpojumi" class="container mb-4 scrollMargin">
         <div class="section-heading">
           <h2 data-en="Services">Pakalpojumi</h2>
           <!-- div class="arrow_down">
@@ -951,6 +973,60 @@
                   <p data-en="Registration number: 40203508200">Reģistrācijas numurs: 40203508200</p>
                   <p data-en="Account number: LV11HABA0551055590519">Konta numurs: LV11HABA0551055590519</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="p-4 bg-body-tertiary border rounded-3 bckgrnd-color">
+                <span class="cf-eyebrow" data-en="Contact form">Kontaktforma</span>
+                <h3 data-en="Request an appointment or ask a question!">Piesakieties vizītei vai uzdodiet jautājumu!</h3>
+                <p data-en="We offer this request form to book an appointment. Once you submit it, we'll get back to you within one business day to confirm your appointment time or answer your question. We look forward to seeing you at the clinic!">Piedāvājam aizpildīt šo pieteikuma formu. Pēc formas aizpildīšanas mēs ar jums sazināsimies vienas darba dienas laikā, lai precizētu pieraksta laiku vai atbildētu uz Jūsu jautājumu. Ar prieku palīdzēsim un gaidīsim Jūs klīnikā!</p>
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="cf-vards" name="vards" placeholder="Vārds*" required>
+                        <label for="cf-vards" data-en="First name*">Vārds*</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="cf-uzvards" name="uzvards" placeholder="Uzvārds*" required>
+                        <label for="cf-uzvards" data-en="Last name*">Uzvārds*</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="cf-epasts" name="epasts" placeholder="E-pasts*" required>
+                        <label for="cf-epasts" data-en="Email*">E-pasts*</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="tel" class="form-control" id="cf-talrunis" name="talrunis" placeholder="Tālrunis*" required>
+                        <label for="cf-talrunis" data-en="Phone*">Tālrunis*</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating h-100">
+                        <textarea class="form-control h-100" id="cf-zina" name="zina" placeholder="Jūsu ziņa" style="min-height:200px;"></textarea>
+                        <label for="cf-zina" data-en="Your message">Jūsu ziņa</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input type="hidden" name="access_key" value="8542f51c-73d1-4fd0-ae49-569710cf0cb9">
+                  <input type="hidden" name="subject" value="Jauns pieteikums no dialdent.lv">
+                  <input type="hidden" name="from_name" value="Dialdent mājaslapa">
+
+                  <div class="cf-hp" aria-hidden="true">
+                    <label for="cf-website">Website</label>
+                    <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <p class="small text-muted mt-3 mb-0" data-en='By clicking "Send," you agree that we will process and store your personal data.'>Noklikšķinot uz "Sūtīt", jūs piekrītat, ka mēs apstrādāsim un saglabāsim jūsu personas datus.</p>
+
+                  <div class="d-flex justify-content-end align-items-center gap-3 mt-3">
+                    <p id="cfSuccess" class="small text-success mb-0 d-none" role="status" data-en="Thank you! Your request has been sent. We will contact you within one business day.">Paldies! Jūsu pieteikums ir nosūtīts. Mēs sazināsimies ar jums vienas darba dienas laikā.</p>
+                    <p id="cfError" class="small text-danger mb-0 d-none" role="alert" data-en="Sorry, something went wrong. Please try again or call us.">Diemžēl radās kļūda. Lūdzu, mēģiniet vēlreiz vai zvaniet mums.</p>
+                    <button type="submit" class="btn btn-primary rounded-pill px-4" data-en="Send">Sūtīt</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
