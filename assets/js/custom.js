@@ -108,10 +108,76 @@ function buildIndicators(){
     });
 }
 
-function addTimesSlide(top){
+var SHEET_URL = 'https://docs.google.com/spreadsheets/d/1luXXELfE1xa6lyP2-iskapK1FPwa_lyx4FD-iXo_vxI/export?format=csv&gid=';
+
+function pad2(n){ return (n < 10 ? '0' : '') + n; }
+
+function parseSlots(csv){
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var slots = [];
+    csv.split(/\r?\n/).forEach(function(line){
+        var p = line.split(',');
+        var d = (p[0] || '').trim().match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+        var t = (p[1] || '').trim().match(/^(\d{1,2}):(\d{2})$/);
+        if(!d || !t){ return; }
+        var day = new Date(+d[3], d[2] - 1, +d[1]);
+        if(day <= today){ return; } // tomorrow and later only
+        slots.push({
+            at: new Date(+d[3], d[2] - 1, +d[1], +t[1], +t[2]),
+            day: pad2(+d[1]) + '.' + pad2(+d[2]) + '.' + d[3],
+            dm: pad2(+d[1]) + '.' + pad2(+d[2]) + '.',
+            time: pad2(+t[1]) + ':' + t[2]
+        });
+    });
+    slots.sort(function(a, b){ return a.at - b.at; });
+    return slots;
+}
+
+function renderTimes(groupId, idPrefix, slots){
+    var group = document.getElementById(groupId);
+    if(!group || !slots.length){ return false; }
+    var list = group.querySelector('.cf-list');
+    var row, last = '';
+    slots.forEach(function(s, i){
+        if(s.day !== last){
+            last = s.day;
+            row = document.createElement('div');
+            row.className = 'd-flex flex-wrap align-items-center gap-2 mb-2';
+            var lbl = document.createElement('span');
+            lbl.className = 'cf-date small fw-semibold';
+            lbl.textContent = s.day;
+            row.appendChild(lbl);
+            list.appendChild(row);
+        }
+        var inp = document.createElement('input');
+        inp.type = 'checkbox';
+        inp.className = 'btn-check';
+        inp.name = group.dataset.name;
+        inp.id = idPrefix + i;
+        inp.value = s.day + ' ' + s.time;
+        inp.autocomplete = 'off';
+        var lab = document.createElement('label');
+        lab.className = 'btn btn-outline-primary btn-sm rounded-pill';
+        lab.htmlFor = inp.id;
+        lab.textContent = s.time;
+        row.appendChild(inp);
+        row.appendChild(lab);
+    });
+    group.classList.remove('d-none');
+    return true;
+}
+
+function addTimesSlide(dentist, hygienist){
     var infoSlider = document.getElementById('infoSlider');
-    if(!infoSlider || !timesSlideNode || !top.length){ return; }
-    timesSlideNode.querySelector('#nextTimes').textContent = top.map(function(s){ return s.day + ' ' + s.time; }).join(', ');
+    if(!infoSlider || !timesSlideNode || (!dentist.length && !hygienist.length)){ return; }
+    [['#ntDentist', dentist], ['#ntHyg', hygienist]].forEach(function(row){
+        var line = timesSlideNode.querySelector(row[0]);
+        if(row[1].length){
+            line.querySelector('span').textContent = row[1].map(function(s){ return s.dm + ' ' + s.time; }).join(', ');
+            line.classList.remove('d-none');
+        }
+    });
     var first = infoSlider.querySelector('.carousel-item');
     if(first){ first.after(timesSlideNode); } else { infoSlider.querySelector('.carousel-inner').appendChild(timesSlideNode); }
     timesSlideNode = null;
@@ -121,60 +187,20 @@ function addTimesSlide(top){
 
 function loadTimes(){
     var box = document.getElementById('cfTimes');
-    var list = document.getElementById('cfTimesList');
-    if(!box || !list){ return; }
-    function pad(n){ return (n < 10 ? '0' : '') + n; }
-    fetch('https://docs.google.com/spreadsheets/d/1luXXELfE1xa6lyP2-iskapK1FPwa_lyx4FD-iXo_vxI/export?format=csv', { cache: 'no-store' })
-        .then(function(r){ if(!r.ok){ throw new Error('sheet'); } return r.text(); })
-        .then(function(csv){
-            var today = new Date();
-            today.setHours(0, 0, 0, 0);
-            var slots = [];
-            csv.split(/\r?\n/).forEach(function(line){
-                var p = line.split(',');
-                var d = (p[0] || '').trim().match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
-                var t = (p[1] || '').trim().match(/^(\d{1,2}):(\d{2})$/);
-                if(!d || !t){ return; }
-                var day = new Date(+d[3], d[2] - 1, +d[1]);
-                if(day <= today){ return; } // tomorrow and later only
-                slots.push({
-                    at: new Date(+d[3], d[2] - 1, +d[1], +t[1], +t[2]),
-                    day: pad(+d[1]) + '.' + pad(+d[2]) + '.' + d[3],
-                    time: pad(+t[1]) + ':' + t[2]
-                });
-            });
-            if(!slots.length){ return; }
-            slots.sort(function(a, b){ return a.at - b.at; });
-            addTimesSlide(slots.slice(0, 3));
-            var row, last = '';
-            slots.forEach(function(s, i){
-                if(s.day !== last){
-                    last = s.day;
-                    row = document.createElement('div');
-                    row.className = 'd-flex flex-wrap align-items-center gap-2 mb-2';
-                    var lbl = document.createElement('span');
-                    lbl.className = 'cf-date small fw-semibold';
-                    lbl.textContent = s.day;
-                    row.appendChild(lbl);
-                    list.appendChild(row);
-                }
-                var inp = document.createElement('input');
-                inp.type = 'checkbox';
-                inp.className = 'btn-check';
-                inp.name = 'laiki';
-                inp.id = 'cf-t-' + i;
-                inp.value = s.day + ' ' + s.time;
-                inp.autocomplete = 'off';
-                var lab = document.createElement('label');
-                lab.className = 'btn btn-outline-primary btn-sm rounded-pill';
-                lab.htmlFor = inp.id;
-                lab.textContent = s.time;
-                row.appendChild(inp);
-                row.appendChild(lab);
-            });
-            box.classList.remove('d-none');
-        })
-        .catch(function(){});
+    function get(gid){
+        return fetch(SHEET_URL + gid, { cache: 'no-store' })
+            .then(function(r){ if(!r.ok){ throw new Error('sheet'); } return r.text(); })
+            .then(parseSlots)
+            .catch(function(){ return []; }); // one sheet failing must not hide the other
+    }
+    Promise.all([get('0'), get('67707315')]).then(function(res){
+        addTimesSlide(res[0].slice(0, 3), res[1].slice(0, 3));
+        if(box){
+            var a = renderTimes('cfTimesDentist', 'cf-d-', res[0]);
+            var b = renderTimes('cfTimesHyg', 'cf-h-', res[1]);
+            if(a || b){ box.classList.remove('d-none'); }
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -210,12 +236,18 @@ document.addEventListener('DOMContentLoaded', function(){
                 return;
             }
             var data = Object.fromEntries(new FormData(contactForm));
-            var times = new FormData(contactForm).getAll('laiki');
+            var fd = new FormData(contactForm);
+            var dentistTimes = fd.getAll('laikiZobarsts');
+            var hygTimes = fd.getAll('laikiHigienists');
+            var timeLines = [];
+            if(dentistTimes.length){ timeLines.push('Zobārste: ' + dentistTimes.join(', ')); }
+            if(hygTimes.length){ timeLines.push('Higiēniste: ' + hygTimes.join(', ')); }
             delete data.website;
-            delete data.laiki;
+            delete data.laikiZobarsts;
+            delete data.laikiHigienists;
             data.name = data.vards + ' ' + data.uzvards;
             data.email = data.epasts;
-            data.message = 'Tālrunis: ' + data.talrunis + (times.length ? '\nVēlamie laiki: ' + times.join(', ') : '') + '\n\n' + (data.zina || '(bez ziņas)');
+            data.message = 'Tālrunis: ' + data.talrunis + (timeLines.length ? '\nVēlamie laiki:\n' + timeLines.join('\n') : '') + '\n\n' + (data.zina || '(bez ziņas)');
             var btn = contactForm.querySelector('button[type="submit"]');
             btn.disabled = true;
             fetch('https://api.web3forms.com/submit', {
